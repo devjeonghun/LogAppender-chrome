@@ -1,0 +1,24 @@
+{
+	"name": "LogAppender Extension",
+	"default_locale": "en",
+	"version": "0.0.1",
+	"description": "__MSG_appDescription__",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_title": "LogAppender Extension",
+		"default_icon": "main.ico"
+	},
+	"icons": {
+		"48": "main.ico",
+		"128": "main.ico"
+	},
+	"devtools_page": "devtools.html",
+	"permissions": [
+		"https://127.0.0.1/"
+	],
+	"background": {
+		"scripts": ["jquery.js", "background.js"],
+		"persistent": true
+	},
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
